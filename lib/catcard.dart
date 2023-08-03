@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:oneapp/constants.dart';
-import 'package:oneapp/webview_screen.dart';
 
-class card extends StatefulWidget {
+class cateogries_card extends StatefulWidget {
   final String imagepath;
   final String name;
-  final int logocolor;
-  final String url;
+  final Widget screenname;
 
-  card(this.imagepath, this.name, this.url, this.logocolor);
+  cateogries_card(this.imagepath, this.name, this.screenname);
 
   @override
-  State<card> createState() => _cardState();
+  State<cateogries_card> createState() => _cateogries_cardState();
 }
 
-class _cardState extends State<card> {
+class _cateogries_cardState extends State<cateogries_card> {
   @override
   void initState() {
     // TODO: implement initState
@@ -55,16 +53,13 @@ class _cardState extends State<card> {
     return Expanded(
       child: GestureDetector(
         onTap: () {
-          // isadloaded
-          //     ? interstitialAd.show()
-          //     :
+          showad();
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => WebViewScreen(widget.url),
+              builder: (context) => widget.screenname,
             ),
           );
-          print("tap");
         },
         child: Container(
           margin: EdgeInsets.all(7),
@@ -84,7 +79,6 @@ class _cardState extends State<card> {
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
-                  color: Color(widget.logocolor),
                 ),
                 height: 55,
                 width: 60,
