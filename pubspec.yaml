@@ -60,6 +60,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
   - lib/images/1.png
+  - lib/images/ONE.png
   - lib/images/shopping/amazon.png
   - lib/images/shopping/flipkart.png
   - lib/images/shopping/myntra.png

@@ -10,10 +10,16 @@ class cateogries_screen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(kdarkcolor),
       appBar: AppBar(
-          backgroundColor: Color(kpinkcolor),
+          backgroundColor: Color(kcardcolor),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [Text("One App"), Icon(Icons.search)],
+            children: [
+              Container(
+                child: Image.asset('lib/images/ONE.png'),
+                width: 65,
+              ),
+              Icon(Icons.search)
+            ],
           )),
       body: Container(
         padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
