@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'card.dart';
-import 'constants.dart';
+import '../card.dart';
+import '../constants.dart';
 
-class shopping_list_elements extends StatelessWidget {
-  const shopping_list_elements({
-    super.key,
-  });
+class ecommerce_screen extends StatelessWidget {
+  const ecommerce_screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +47,36 @@ class shopping_list_elements extends StatelessWidget {
               "https://paytmmall.com/", kcardcolor),
           card("lib/images/shopping/apple.png", "Apple",
               "https://www.apple.com/in/store", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/shopping/aliexpress.png", "AliExpress",
+              "https://m.aliexpress.com/", kcardcolor),
+          card("lib/images/shopping/olx.png", "OLX", "https://www.olx.in/en-in",
+              kwhitecolor),
+          card("lib/images/shopping/ebay.png", "Ebay", "https://www.ebay.com/",
+              kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/shopping/lenskart.png", "Lenskart",
+              "https://www.lenskart.com/", kcardcolor),
+          card("lib/images/shopping/mi.png", "MI", "https://paytmmall.com/",
+              kcardcolor),
+          card("lib/images/shopping/realme.jpg", "Realme",
+              "https://www.realme.com/in/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/shopping/nykaa.png", "Nykaa",
+              "https://www.nykaa.com/", kcardcolor),
+          card("lib/images/shopping/decathlon.png", "Decathlon",
+              "https://www.decathlon.in/", kcardcolor),
+          card("lib/images/shopping/firstcry.png", "Firstcry",
+              "https://www.firstcry.com/", kcardcolor),
         ],
       )
     ]);

@@ -37,8 +37,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   webview_flutter: ^4.2.2
   google_mobile_ads: ^3.0.0
+  connectivity: ^3.0.6
+  lottie: ^2.5.0
+  flutter_native_splash: ^2.3.1
+  get: ^4.6.5
 
-  provider: ^6.0.5
+
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +68,21 @@ flutter:
   assets:
   - lib/images/1.png
   - lib/images/ONE.png
+  - lib/images/nointernet.json
+  #cateogries
+  - lib/images/cateogries/food.png
+  - lib/images/cateogries/utilities.png
+  - lib/images/cateogries/finance.png
+  - lib/images/cateogries/education.png
+  - lib/images/cateogries/health.png
+  - lib/images/cateogries/music.png
+  - lib/images/cateogries/news.png
+  - lib/images/cateogries/ott.png
+  - lib/images/cateogries/shopping.png
+  - lib/images/cateogries/socialmedia.png
+  - lib/images/cateogries/sports.png
+  - lib/images/cateogries/travel.png
+  #ecom
   - lib/images/shopping/amazon.png
   - lib/images/shopping/flipkart.png
   - lib/images/shopping/myntra.png
@@ -77,6 +96,39 @@ flutter:
   - lib/images/shopping/meeshow.png
   - lib/images/shopping/mi.png
   - lib/images/shopping/realme.jpg
+  - lib/images/shopping/olx.png
+  - lib/images/shopping/lenskart.png
+  - lib/images/shopping/aliexpress.png
+  - lib/images/shopping/banggood.png
+  - lib/images/shopping/ebay.png
+  - lib/images/shopping/nykaa.png
+  - lib/images/shopping/decathlon.png
+  - lib/images/shopping/walmart.png
+  - lib/images/shopping/firstcry.png
+  #social
+  - lib/images/social/instagram.png
+  - lib/images/social/twitterx.png
+  - lib/images/social/threads.png
+  - lib/images/social/facebook.png
+  - lib/images/social/messenger.png
+  - lib/images/social/snapchat.png
+  - lib/images/social/youtube.png
+  - lib/images/social/linkedin.png
+  - lib/images/social/gmail.png
+  - lib/images/social/koo.png
+  - lib/images/social/telegram.png
+  - lib/images/social/mxtakatak.png
+  - lib/images/social/moj.png
+  - lib/images/social/josh.png
+  - lib/images/social/chingari.png
+  - lib/images/social/josh.png
+  - lib/images/social/sharechat.png
+  - lib/images/social/tumblr.png
+  - lib/images/social/wiki.png
+
+
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

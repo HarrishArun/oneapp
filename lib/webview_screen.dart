@@ -1,8 +1,11 @@
 import 'dart:async';
 
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:oneapp/constants.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
+import 'nointernet_screen.dart';
 
 class WebViewScreen extends StatefulWidget {
   final String url;
@@ -21,6 +24,15 @@ class _WebViewScreenState extends State<WebViewScreen> {
 
   @override
   void initState() {
+    Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
+      if (result == ConnectivityResult.none) {
+        // Redirect to NoInternetScreen immediately if there is no internet connection
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => nointernet_screen()));
+      } else {
+        Navigator.pop(context);
+      }
+    });
     super.initState();
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)

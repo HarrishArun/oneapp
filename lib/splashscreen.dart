@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:oneapp/cateogties.dart';
 import 'package:oneapp/constants.dart';
-import "shopping.dart";
 
 class SplashScreen extends StatefulWidget {
   @override

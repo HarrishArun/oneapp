@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:oneapp/constants.dart';
+import 'package:connectivity/connectivity.dart';
+import 'package:oneapp/nointernet_screen.dart';
 
 class apps_screen extends StatefulWidget {
   final Widget? elements;
@@ -13,7 +15,16 @@ class apps_screen extends StatefulWidget {
 class _apps_screenState extends State<apps_screen> {
   @override
   void initState() {
-    // TODO: implement initState
+    Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
+      if (result == ConnectivityResult.none) {
+        // Redirect to NoInternetScreen immediately if there is no internet connection
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => nointernet_screen()));
+      } else {
+        Navigator.pop(context);
+      }
+    });
+
     initinterstialad();
     initbannerad();
 
@@ -88,7 +99,7 @@ class _apps_screenState extends State<apps_screen> {
             padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
             child: widget.elements),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: showad),
+      //  floatingActionButton: FloatingActionButton(onPressed: showad),
       bottomNavigationBar: isAdloaded
           ? SizedBox(
               height: bannerAd.size.height.toDouble(),

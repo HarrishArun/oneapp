@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:oneapp/apps_screen.dart';
+import 'package:oneapp/appscreens/ecommerce.dart';
+import 'package:oneapp/appscreens/education.dart';
+import 'package:oneapp/appscreens/entertainment.dart';
+import 'package:oneapp/appscreens/finance.dart';
+import 'package:oneapp/appscreens/fooddelivery.dart';
+import 'package:oneapp/appscreens/health.dart';
+import 'package:oneapp/appscreens/music.dart';
+import 'package:oneapp/appscreens/news.dart';
+import 'package:oneapp/appscreens/productivity.dart';
+import 'package:oneapp/appscreens/socialmedia.dart';
+import 'package:oneapp/appscreens/sports.dart';
+import 'package:oneapp/appscreens/travel.dart';
 import 'package:oneapp/constants.dart';
-import 'package:oneapp/shopping.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'catcard.dart';
-import 'card.dart';
 
 class cateogries_screen extends StatefulWidget {
   @override
@@ -65,26 +75,50 @@ class _cateogries_screenState extends State<cateogries_screen> {
           children: [
             Row(
               children: [
-                cateogries_card("lib/images/shopping/ajio.png", "Ajio",
-                    apps_screen(shopping_list_elements())),
-                cateogries_card("lib/images/shopping/ajio.png", "Ajio",
-                    apps_screen(shopping_list_elements())),
+                cateogries_card("lib/images/cateogries/shopping.png",
+                    "E-Commerce", apps_screen(ecommerce_screen())),
+                cateogries_card("lib/images/cateogries/socialmedia.png",
+                    "Social Media", apps_screen(sociamedia_screen())),
               ],
             ),
             Row(
               children: [
-                cateogries_card("lib/images/shopping/ajio.png", "Ajio",
-                    apps_screen(shopping_list_elements())),
-                cateogries_card("lib/images/shopping/ajio.png", "Ajio",
-                    apps_screen(shopping_list_elements())),
+                cateogries_card("lib/images/cateogries/food.png",
+                    "FoodDelivery", apps_screen(fooddelivery_screen())),
+                cateogries_card("lib/images/cateogries/news.png", "News",
+                    apps_screen(news_screen())),
               ],
             ),
             Row(
               children: [
-                cateogries_card("lib/images/shopping/ajio.png", "Ajio",
-                    apps_screen(shopping_list_elements())),
-                cateogries_card("lib/images/shopping/ajio.png", "Ajio",
-                    apps_screen(shopping_list_elements())),
+                cateogries_card("lib/images/cateogries/travel.png", "Travel",
+                    apps_screen(travel_screen())),
+                cateogries_card("lib/images/cateogries/ott.png",
+                    "Entertainment", apps_screen(entertainment_screen())),
+              ],
+            ),
+            Row(
+              children: [
+                cateogries_card("lib/images/cateogries/health.png", "health",
+                    apps_screen(health_screen())),
+                cateogries_card("lib/images/cateogries/sports.png", "Sports",
+                    apps_screen(sports_screen())),
+              ],
+            ),
+            Row(
+              children: [
+                cateogries_card("lib/images/cateogries/music.png", "Music",
+                    apps_screen(music_screen())),
+                cateogries_card("lib/images/cateogries/education.png",
+                    "Education", apps_screen(education_screen())),
+              ],
+            ),
+            Row(
+              children: [
+                cateogries_card("lib/images/cateogries/utilities.png",
+                    "Productivity", apps_screen(productivity_screen())),
+                cateogries_card("lib/images/cateogries/finance.png", "Finance",
+                    apps_screen(finance_screen())),
               ],
             )
           ],
