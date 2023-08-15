@@ -14,6 +14,7 @@ import 'package:OneApp/appscreens/socialmedia.dart';
 import 'package:OneApp/appscreens/sports.dart';
 import 'package:OneApp/appscreens/travel.dart';
 import 'package:OneApp/constants.dart';
+import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'catcard.dart';
 import 'nointernet_screen.dart';
@@ -37,7 +38,7 @@ class _cateogries_screenState extends State<cateogries_screen> {
     });
 
     super.initState();
-    initbannerad();
+    // initbannerad();
   }
 
   late BannerAd bannerAd;
@@ -46,22 +47,22 @@ class _cateogries_screenState extends State<cateogries_screen> {
   var adunit = "ca-app-pub-3940256099942544/6300978111"; //testbannerid
   var ogadunit = "ca-app-pub-6244166341956934/9528597233"; //ogbannerid
 
-  initbannerad() {
-    bannerAd = BannerAd(
-        request: AdRequest(),
-        size: AdSize.banner,
-        //adUnitId: "ca-app-pub-6244166341956934/9528597233",
-        adUnitId: ogadunit,
-        listener: BannerAdListener(onAdLoaded: ((ad) {
-          setState(() {
-            isAdloaded = true;
-          });
-        }), onAdFailedToLoad: ((ad, error) {
-          ad.dispose();
-          print(error);
-        })));
-    bannerAd.load();
-  }
+  // initbannerad() {
+  //   bannerAd = BannerAd(
+  //       request: AdRequest(),
+  //       size: AdSize.banner,
+  //       //adUnitId: "ca-app-pub-6244166341956934/9528597233",
+  //       adUnitId: ogadunit,
+  //       listener: BannerAdListener(onAdLoaded: ((ad) {
+  //         setState(() {
+  //           isAdloaded = true;
+  //         });
+  //       }), onAdFailedToLoad: ((ad, error) {
+  //         ad.dispose();
+  //         print(error);
+  //       })));
+  //   bannerAd.load();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,6 @@ class _cateogries_screenState extends State<cateogries_screen> {
                     Hero(tag: "one", child: Image.asset('lib/images/ONE.png')),
                 width: 54,
               ),
-              Icon(Icons.search)
             ],
           )),
       body: Container(
@@ -136,13 +136,14 @@ class _cateogries_screenState extends State<cateogries_screen> {
           ],
         ),
       ),
-      bottomNavigationBar: isAdloaded
-          ? SizedBox(
-              height: bannerAd.size.height.toDouble(),
-              width: bannerAd.size.width.toDouble(),
-              child: AdWidget(ad: bannerAd),
-            )
-          : SizedBox(),
+
+      //     bottomNavigationBar: isAdloaded
+      //         ? SizedBox(
+      //             height: bannerAd.size.height.toDouble(),
+      //             width: bannerAd.size.width.toDouble(),
+      //             child: AdWidget(ad: bannerAd),
+      //           )
+      //         : SizedBox(),
     );
   }
 }

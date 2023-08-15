@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:OneApp/constants.dart';
 
@@ -25,7 +26,6 @@ class _cateogries_cardState extends State<cateogries_card> {
 
   late InterstitialAd interstitialAd;
   bool isadloaded = false;
-  var intaddid = "ca-app-pub-6244166341956934/3816588638";
 
   initinterstialad() {
     InterstitialAd.load(

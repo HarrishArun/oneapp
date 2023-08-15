@@ -7,13 +7,12 @@ import 'package:OneApp/constants.dart';
 import 'package:OneApp/splashscreen.dart';
 
 import 'nointernet_screen.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   MobileAds.instance.initialize();
-  FlutterNativeSplash.remove();
+
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor: Color(kdarkcolor),
     statusBarColor: Color(kdarkcolor),

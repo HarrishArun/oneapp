@@ -11,41 +11,58 @@ class news_screen extends StatelessWidget {
       Row(
         children: [
           card(
-            "lib/images/shopping/amazon.png",
-            "Amazon",
-            "https://amzn.to/3rkLreJ",
+            "lib/images/news/quora.jpg",
+            "Quora",
+            "https://www.quora.com/",
             kcardcolor,
           ),
-          card("lib/images/shopping/flipkart.png", "Flipkart",
-              "https://www.flipkart.com/", kcardcolor),
           card(
-              "lib/images/shopping/myntra.png",
-              "Myntra",
-              "https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ykCHHe6HZQvCsNmH2HnNvDSc5hTjZHHqDmRUchpoxm87uaJ_BPWcUUaAtXbEALw_wcB",
-              kcardcolor),
-        ],
-      ),
-      Row(
-        children: [
-          card("lib/images/shopping/ajio.png", "Ajio", "https://www.ajio.com/",
-              kcardcolor),
-          card("lib/images/shopping/snapdeal.png", "Snapdeal",
-              "https://m.snapdeal.com/", kwhitecolor),
-          card("lib/images/shopping/bigbasket.png", "bigbasket",
-              "https://www.bigbasket.com/", kwhitecolor),
-        ],
-      ),
-      Row(
-        children: [
-          card(
-              "lib/images/shopping/tatacliq.png",
-              "Tatacliq",
-              "https://www.tatacliq.com/?cid=ps:tata_cliq_brand_south:google:tata_cliq_Generic_exact:brand&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ynX_gN5lcPCEbULc7cWbX9KQC86Dn-jcD-NKpAXQq0TrklVtFbElbEaAp2jEALw_wcB&gclsrc=aw.ds",
+              "lib/images/news/googlenews.png",
+              "GoogleNews",
+              "https://news.google.com/topstories?hl=en-US&gl=US&ceid=US:en",
               kwhitecolor),
-          card("lib/images/shopping/paytmmall.png", "Paytm Mall",
-              "https://paytmmall.com/", kcardcolor),
-          card("lib/images/shopping/apple.png", "Apple",
-              "https://www.apple.com/in/store", kcardcolor),
+          card("lib/images/news/bbc.png", "BBC", "https://www.bbc.com/news",
+              kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/news/timesofindia.png", "TimesofIndia",
+              "https://m.timesofindia.com/amp_home", kcardcolor),
+          card("lib/images/news/opera.png", "Operanews",
+              "https://operanews.com/", kcardcolor),
+          card("lib/images/news/ET.jpg", "EconomicTimes",
+              "https://m.economictimes.com/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/news/jionews.png", "JioNews", "https://jionews.com/",
+              kcardcolor),
+          card("lib/images/social/wiki.png", "WikiPedia",
+              "https://www.wikipedia.org/", kcardcolor),
+          card("lib/images/news/indianexpress.jpg", "IndianExpress",
+              "https://indianexpress.com/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/news/dc.jpg", "DC",
+              "https://www.deccanchronicle.com/amp", kcardcolor),
+          card("lib/images/news/dinamalar.png", "Dinmalar",
+              "https://m.dinamalar.com/index.php", kcardcolor),
+          card("lib/images/news/dailythandi.png", "DailyThandhi",
+              "https://www.dailythanthi.com/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/news/ndtv.png", "NDTV", "https://www.ndtv.com/amp",
+              kcardcolor),
+          card("lib/images/news/vikatan.jpg", "Vikatan",
+              "https://www.vikatan.com/", kcardcolor),
+          card("lib/images/news/indiatoday.jpg", "IndiaToday",
+              "https://www.indiatoday.in/", kcardcolor),
         ],
       )
     ]);

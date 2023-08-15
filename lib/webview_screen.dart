@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:OneApp/constants.dart';
+import 'package:flutter/services.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'nointernet_screen.dart';
@@ -65,7 +66,10 @@ class _WebViewScreenState extends State<WebViewScreen> {
           if (isInitialLoad) {
             setState(() {
               isLoading = false;
-              isInitialLoad = false; // Disable initial load indicator
+              isInitialLoad = false;
+              HapticFeedback.heavyImpact();
+
+              // Disable initial load indicator
             });
           }
         },

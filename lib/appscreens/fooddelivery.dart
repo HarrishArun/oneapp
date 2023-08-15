@@ -13,53 +13,80 @@ class fooddelivery_screen extends StatelessWidget {
           card(
             "lib/images/food/swiggy.png",
             "Swiggy",
-            "https://amzn.to/3rkLreJ",
+            "https://www.swiggy.com/",
             kcardcolor,
           ),
           card("lib/images/food/zomato.png", "Zomato",
-              "https://www.flipkart.com/", kcardcolor),
+              "https://www.zomato.com/", kcardcolor),
+          card("lib/images/food/ubereats.png", "Ubereats",
+              "https://www.ubereats.com/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/food/zepto.png", "Zepto",
+              "https://www.zeptonow.com/", kcardcolor),
+          card("lib/images/food/dunzo.png", "Dunzo", "https://www.dunzo.com/",
+              kcardcolor),
+          card("lib/images/food/bigbasket.jpg", "BigBasket",
+              "https://www.bigbasket.com/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/food/pizzahut.png", "PizzaHut",
+              "https://www.pizzahut.co.in/", kcardcolor),
           card(
-              "lib/images/food/ubereats.png",
-              "Ubereats",
-              "https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ykCHHe6HZQvCsNmH2HnNvDSc5hTjZHHqDmRUchpoxm87uaJ_BPWcUUaAtXbEALw_wcB",
+              "lib/images/food/dominos.png",
+              "Dominos",
+              "https://m.dominos.co.in/jfl-discovery-ui/en/pwa/home/6585R?&src=google_sem_brand&utm_source=google&utm_medium=cpc&utm_campaign=Brand-PanIndia-NewUser21Oct22&gclid=CjwKCAjwxOymBhAFEiwAnodBLFfIpOaqmoZ5pGs8H4BByHfbG6dHA16ARKJpskRsjfWciigrV6fdIxoCWdUQAvD_BwE",
+              kcardcolor),
+          card(
+              "lib/images/food/mc.png",
+              "McDonalds",
+              "https://mcdelivery.co.in/?dsrcode=0001&businessmodelid=18&gclid=CjwKCAjwxOymBhAFEiwAnodBLEyxB5Zl1ZbXwbhH-JL_t8-egIxSc6L1HoDCIG-u188P1TsyiRZKChoCSdYQAvD_BwE",
               kcardcolor),
         ],
       ),
       Row(
         children: [
-          card("lib/images/food/foodpanda.png", "Foodpanda",
-              "https://www.ajio.com/", kcardcolor),
-          card("lib/images/food/dunzo.png", "Dunzo", "", kwhitecolor),
-          card("lib/images/shopping/bigbasket.png", "bigbasket",
-              "https://www.bigbasket.com/", kwhitecolor),
+          card("lib/images/food/subway.png", "Subway", "https://subway.in/",
+              kcardcolor),
+          card("lib/images/food/cafecoffee.jpg", "Cafecoffeeday",
+              "https://www.cafecoffeeday.com/", kcardcolor),
+          card("lib/images/food/blinkit.png", "Blinkit", "https://blinkit.com/",
+              kcardcolor),
         ],
       ),
       Row(
         children: [
           card(
-              "lib/images/food/pizzahut.png",
-              "Tatacliq",
-              "https://www.tatacliq.com/?cid=ps:tata_cliq_brand_south:google:tata_cliq_Generic_exact:brand&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ynX_gN5lcPCEbULc7cWbX9KQC86Dn-jcD-NKpAXQq0TrklVtFbElbEaAp2jEALw_wcB&gclsrc=aw.ds",
-              kwhitecolor),
-          card("lib/images/food/dominos.png", "Paytm Mall",
-              "https://paytmmall.com/", kcardcolor),
-          card("lib/images/food/justeat.png", "Apple",
-              "https://www.apple.com/in/store", kcardcolor),
+              "lib/images/shopping/flipkart.png",
+              "Supermart",
+              "https://www.flipkart.com/grocery/flipkart-supermart-select~brand/pr?sid=73z&marketplace=GROCERY",
+              kcardcolor),
+          card("lib/images/food/swiggy.png", "Instamart",
+              "https://www.swiggy.com/restaurants/instamart", kcardcolor),
+          // card(
+          //     "lib/images/food/jiomart.png",
+          //     "Jiomart",
+          //     "https://www.jiomart.com/?gclid=CjwKCAjwxOymBhAFEiwAnodBLF_HtdD3JdUQV5m3oiX02pUPnqqem4bEIClrp99_gEdc-fr0UkS7gBoCRjoQAvD_BwE",
+          //     kcardcolor),
+          card("lib/images/food/eatsure.jpg", "Eatsure",
+              "https://www.eatsure.com/", kcardcolor),
         ],
       ),
-      Row(
-        children: [
-          card(
-              "lib/images/food/pizzahut.png",
-              "McDonalds",
-              "https://www.tatacliq.com/?cid=ps:tata_cliq_brand_south:google:tata_cliq_Generic_exact:brand&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ynX_gN5lcPCEbULc7cWbX9KQC86Dn-jcD-NKpAXQq0TrklVtFbElbEaAp2jEALw_wcB&gclsrc=aw.ds",
-              kwhitecolor),
-          card("lib/images/food/dominos.png", "Starbucks",
-              "https://paytmmall.com/", kcardcolor),
-          card("lib/images/food/justeat.png", "Subway",
-              "https://www.apple.com/in/store", kcardcolor),
-        ],
-      )
+      // Row(
+      //   children: [
+      //     card("lib/images/food/swiggy.png", "Swiggy Instamart",
+      //         "https://www.swiggy.com/restaurants/instamart", kcardcolor),
+      //     card(
+      //         "lib/images/food/jiomart.png",
+      //         "Jiomart",
+      //         "https://www.jiomart.com/?gclid=CjwKCAjwxOymBhAFEiwAnodBLF_HtdD3JdUQV5m3oiX02pUPnqqem4bEIClrp99_gEdc-fr0UkS7gBoCRjoQAvD_BwE",
+      //         kcardcolor),
+      //   ],
+      // )
     ]);
   }
 }

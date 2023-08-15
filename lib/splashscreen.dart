@@ -9,22 +9,28 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  Future<void> loadAssetsAndNavigate() async {
+    // Simulate loading assets or other data here
+    await Future.delayed(
+        Duration(seconds: 2)); // Add any other loading logic if needed
+
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (context) => cateogries_screen()),
+    );
+  }
+
   @override
   void initState() {
     super.initState();
-    // Navigate to the other screen after 4 seconds
-    Timer(Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => cateogries_screen()),
-      );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      loadAssetsAndNavigate();
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          Color(kdarkcolor), // Set the background color of your splash screen
+      backgroundColor: Color(kdarkcolor),
       body: Container(
         padding: EdgeInsets.all(25),
         child: Center(
@@ -33,16 +39,13 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Container(
                 height: 150,
-                // width: 150,
                 child:
                     Hero(tag: "one", child: Image.asset('lib/images/ONE.png')),
-              ), // Replace 'splash.png' with your image asset
+              ),
               SizedBox(height: 20),
               LinearProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(
-                    Color(kpinkcolor)), // Set your custom color here
-                backgroundColor: Colors
-                    .grey[300], // Set the background color of the progress bar
+                valueColor: AlwaysStoppedAnimation<Color>(Color(kpinkcolor)),
+                backgroundColor: Colors.grey[300],
               ),
             ],
           ),

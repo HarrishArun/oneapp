@@ -34,7 +34,7 @@ class _apps_screenState extends State<apps_screen> {
 
   late InterstitialAd interstitialAd;
   bool isadloaded = false;
-  var intaddid = "ca-app-pub-6244166341956934/3816588638"; //interstital ad id
+  // var intaddid = "ca-app-pub-6244166341956934/3816588638"; //interstital ad id
   late BannerAd bannerAd;
 
   bool isAdloaded = false;
@@ -46,12 +46,15 @@ class _apps_screenState extends State<apps_screen> {
         size: AdSize.banner,
         adUnitId: ogadunit,
         // adUnitId: "ca-app-pub-6244166341956934/9528597233",
+
         listener: BannerAdListener(onAdLoaded: ((ad) {
           setState(() {
             isAdloaded = true;
           });
         }), onAdFailedToLoad: ((ad, error) {
+          //initbannerad();
           ad.dispose();
+          // print("worked after retry");
           print(error);
         })));
     bannerAd.load();
@@ -74,6 +77,7 @@ class _apps_screenState extends State<apps_screen> {
   showad() {
     if (isadloaded) {
       interstitialAd.show();
+      initbannerad();
     }
   }
 
@@ -91,7 +95,6 @@ class _apps_screenState extends State<apps_screen> {
                     Hero(tag: "one", child: Image.asset('lib/images/ONE.png')),
                 width: 54,
               ),
-              Icon(Icons.search)
             ],
           )),
       body: WillPopScope(

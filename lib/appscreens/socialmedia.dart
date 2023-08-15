@@ -56,7 +56,7 @@ class sociamedia_screen extends StatelessWidget {
         children: [
           card("lib/images/social/josh.png", "MxTakaTak",
               "https://share.myjosh.in/", kcardcolor),
-          card("lib/images/social/chingari.png", "Snapchat",
+          card("lib/images/social/chingari.png", "Chingari",
               "https://chingari.io/post/latest", kcardcolor),
           card("lib/images/social/sharechat.png", "Moj",
               "https://sharechat.com/", kcardcolor),
