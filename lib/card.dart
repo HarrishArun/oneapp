@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:oneapp/constants.dart';
-import 'package:oneapp/webview_screen.dart';
+import 'package:OneApp/constants.dart';
+import 'package:OneApp/webview_screen.dart';
 
 class card extends StatefulWidget {
   final String imagepath;
@@ -18,7 +18,6 @@ class card extends StatefulWidget {
 class _cardState extends State<card> {
   @override
   void initState() {
-    // TODO: implement initState
     initinterstialad();
 
     showad();

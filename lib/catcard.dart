@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:oneapp/constants.dart';
+import 'package:OneApp/constants.dart';
 
 class cateogries_card extends StatefulWidget {
   final String imagepath;
@@ -16,7 +16,6 @@ class cateogries_card extends StatefulWidget {
 class _cateogries_cardState extends State<cateogries_card> {
   @override
   void initState() {
-    // TODO: implement initState
     initinterstialad();
 
     showad();
@@ -26,7 +25,7 @@ class _cateogries_cardState extends State<cateogries_card> {
 
   late InterstitialAd interstitialAd;
   bool isadloaded = false;
-  var intaddid = "ca-app-pub-3940256099942544/1033173712";
+  var intaddid = "ca-app-pub-6244166341956934/3816588638";
 
   initinterstialad() {
     InterstitialAd.load(

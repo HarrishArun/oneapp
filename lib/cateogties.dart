@@ -1,20 +1,22 @@
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
-import 'package:oneapp/apps_screen.dart';
-import 'package:oneapp/appscreens/ecommerce.dart';
-import 'package:oneapp/appscreens/education.dart';
-import 'package:oneapp/appscreens/entertainment.dart';
-import 'package:oneapp/appscreens/finance.dart';
-import 'package:oneapp/appscreens/fooddelivery.dart';
-import 'package:oneapp/appscreens/health.dart';
-import 'package:oneapp/appscreens/music.dart';
-import 'package:oneapp/appscreens/news.dart';
-import 'package:oneapp/appscreens/productivity.dart';
-import 'package:oneapp/appscreens/socialmedia.dart';
-import 'package:oneapp/appscreens/sports.dart';
-import 'package:oneapp/appscreens/travel.dart';
-import 'package:oneapp/constants.dart';
+import 'package:OneApp/apps_screen.dart';
+import 'package:OneApp/appscreens/ecommerce.dart';
+import 'package:OneApp/appscreens/education.dart';
+import 'package:OneApp/appscreens/entertainment.dart';
+import 'package:OneApp/appscreens/finance.dart';
+import 'package:OneApp/appscreens/fooddelivery.dart';
+import 'package:OneApp/appscreens/health.dart';
+import 'package:OneApp/appscreens/music.dart';
+import 'package:OneApp/appscreens/news.dart';
+import 'package:OneApp/appscreens/productivity.dart';
+import 'package:OneApp/appscreens/socialmedia.dart';
+import 'package:OneApp/appscreens/sports.dart';
+import 'package:OneApp/appscreens/travel.dart';
+import 'package:OneApp/constants.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'catcard.dart';
+import 'nointernet_screen.dart';
 
 class cateogries_screen extends StatefulWidget {
   @override
@@ -24,7 +26,16 @@ class cateogries_screen extends StatefulWidget {
 class _cateogries_screenState extends State<cateogries_screen> {
   @override
   void initState() {
-    // TODO: implement initState
+    Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
+      if (result == ConnectivityResult.none) {
+        // Redirect to NoInternetScreen immediately if there is no internet connection
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => nointernet_screen()));
+      } else {
+        Navigator.pop(context);
+      }
+    });
+
     super.initState();
     initbannerad();
   }
@@ -32,14 +43,15 @@ class _cateogries_screenState extends State<cateogries_screen> {
   late BannerAd bannerAd;
 
   bool isAdloaded = false;
-  var adunit = "ca-app-pub-3940256099942544/6300978111";
-  var ogadunit = "ca-app-pub-6244166341956934/7648361744"; //testid
+  var adunit = "ca-app-pub-3940256099942544/6300978111"; //testbannerid
+  var ogadunit = "ca-app-pub-6244166341956934/9528597233"; //ogbannerid
 
   initbannerad() {
     bannerAd = BannerAd(
         request: AdRequest(),
         size: AdSize.banner,
-        adUnitId: adunit,
+        //adUnitId: "ca-app-pub-6244166341956934/9528597233",
+        adUnitId: ogadunit,
         listener: BannerAdListener(onAdLoaded: ((ad) {
           setState(() {
             isAdloaded = true;

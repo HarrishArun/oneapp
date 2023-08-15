@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:oneapp/constants.dart';
+import 'package:OneApp/constants.dart';
 
 class nointernet_screen extends StatefulWidget {
   const nointernet_screen({super.key});

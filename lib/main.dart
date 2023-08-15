@@ -1,12 +1,19 @@
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:oneapp/constants.dart';
-import 'package:oneapp/splashscreen.dart';
+
+import 'package:OneApp/constants.dart';
+import 'package:OneApp/splashscreen.dart';
+
+import 'nointernet_screen.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
   MobileAds.instance.initialize();
+  FlutterNativeSplash.remove();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor: Color(kdarkcolor),
     statusBarColor: Color(kdarkcolor),
@@ -14,8 +21,27 @@ void main() {
   runApp(const oneapp());
 }
 
-class oneapp extends StatelessWidget {
+class oneapp extends StatefulWidget {
   const oneapp({super.key});
+
+  @override
+  State<oneapp> createState() => _oneappState();
+}
+
+class _oneappState extends State<oneapp> {
+  @override
+  void initState() {
+    super.initState();
+    Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
+      if (result == ConnectivityResult.none) {
+        // Redirect to NoInternetScreen immediately if there is no internet connection
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => nointernet_screen()));
+      } else {
+        Navigator.pop(context);
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

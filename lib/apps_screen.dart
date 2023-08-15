@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:oneapp/constants.dart';
+import 'package:OneApp/constants.dart';
 import 'package:connectivity/connectivity.dart';
-import 'package:oneapp/nointernet_screen.dart';
+import 'package:OneApp/nointernet_screen.dart';
 
 class apps_screen extends StatefulWidget {
   final Widget? elements;
@@ -25,7 +25,7 @@ class _apps_screenState extends State<apps_screen> {
       }
     });
 
-    initinterstialad();
+    // initinterstialad();
     initbannerad();
 
     super.initState();
@@ -34,17 +34,18 @@ class _apps_screenState extends State<apps_screen> {
 
   late InterstitialAd interstitialAd;
   bool isadloaded = false;
-  var intaddid = "ca-app-pub-3940256099942544/1033173712"; //testidinit
+  var intaddid = "ca-app-pub-6244166341956934/3816588638"; //interstital ad id
   late BannerAd bannerAd;
 
   bool isAdloaded = false;
   var adunit = "ca-app-pub-3940256099942544/6300978111"; //testbannerid
-  var ogadunit = "ca-app-pub-6244166341956934/7648361744"; //ogbannerid
+  var ogadunit = "ca-app-pub-6244166341956934/9528597233"; //ogbannerid
   initbannerad() {
     bannerAd = BannerAd(
         request: AdRequest(),
         size: AdSize.banner,
-        adUnitId: adunit,
+        adUnitId: ogadunit,
+        // adUnitId: "ca-app-pub-6244166341956934/9528597233",
         listener: BannerAdListener(onAdLoaded: ((ad) {
           setState(() {
             isAdloaded = true;

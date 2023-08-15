@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
-import 'package:oneapp/constants.dart';
+import 'package:OneApp/constants.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'nointernet_screen.dart';
