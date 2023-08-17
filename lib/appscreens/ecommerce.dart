@@ -75,6 +75,35 @@ class ecommerce_screen extends StatelessWidget {
               "https://www.nykaa.com/", kcardcolor),
           card("lib/images/shopping/decathlon.png", "Decathlon",
               "https://www.decathlon.in/", kcardcolor),
+          card("lib/images/shopping/meesho.png", "Meesho",
+              "https://www.meesho.com/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card(
+              "lib/images/shopping/relaiancedigital.png",
+              "Digital",
+              "https://www.reliancedigital.in/?gclid=CjwKCAjwxOymBhAFEiwAnodBLEhU03cccEbnnhe9_m0L3x4Rpng3Md2KMfKf7ssj_C_eLt9wv7kCnRoCSkEQAvD_BwE",
+              kcardcolor),
+          card(
+              "lib/images/shopping/croma.jpg",
+              "Croma",
+              "https://www.croma.com/?utm_source=click2commission&utm_medium=affiliate&utm_campaign=sok_click2commission_121&utm_content=email&gclid=CjwKCAjwxOymBhAFEiwAnodBLJPEpUkhgnQhNV__FUTn-35jgp0DEOkNgsZczX4HGO-nldELQpeejBoCUHkQAvD_BwE",
+              kcardcolor),
+          card(
+              "lib/images/shopping/jiomart.jpg",
+              "Jiomart",
+              "https://www.jiomart.com/?gclid=CjwKCAjwxOymBhAFEiwAnodBLF_HtdD3JdUQV5m3oiX02pUPnqqem4bEIClrp99_gEdc-fr0UkS7gBoCRjoQAvD_BwE",
+              kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card("lib/images/shopping/poorvika.jpg", "Poorvika",
+              "https://poorvika.com/", kcardcolor),
+          card("lib/images/shopping/chennaimobiles.jpg", "ChennaiMobiles",
+              "https://www.thechennaimobiles.com/", kcardcolor),
           card("lib/images/shopping/firstcry.png", "Firstcry",
               "https://www.firstcry.com/", kcardcolor),
         ],

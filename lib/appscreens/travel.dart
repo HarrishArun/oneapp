@@ -55,7 +55,7 @@ class travel_screen extends StatelessWidget {
               "Booking.com",
               "https://www.booking.com/index.en-gb.html?aid=2311236;label=en-in-booking-mobile-PzCtZSeq_K7p82LvC_GUtQSM652796016639:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-334108349:lp9299018:li:dem:dm;ws=&gclid=CjwKCAjwxOymBhAFEiwAnodBLD9-MKHJoG1TVDWeSokeGgfZp_jhIiqi96umoJ16h9axJNZawPakwRoCfgYQAvD_BwE",
               kcardcolor),
-          card("lib/images/shopping/paytmmall.png", "Justdial",
+          card("lib/images/travel/justdial.png", "Justdial",
               "https://www.justdial.com/", kcardcolor),
           card("lib/images/travel/yatra.png", "Yatra", "https://www.yatra.com/",
               kcardcolor),
@@ -81,7 +81,7 @@ class travel_screen extends StatelessWidget {
           card(
               "lib/images/travel/airindia.png",
               "AirIndia",
-              " https://www.airindia.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand-exact&gad=1&gclid=CjwKCAjwxOymBhAFEiwAnodBLB8BWWxb2At1gK6CzEnYcB6ue4M0mwOPN4UG-B4X25P1sCvHZuWM1BoC5DIQAvD_BwE",
+              "https://www.airindia.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand-exact&gad=1&gclid=CjwKCAjwxOymBhAFEiwAnodBLB8BWWxb2At1gK6CzEnYcB6ue4M0mwOPN4UG-B4X25P1sCvHZuWM1BoC5DIQAvD_BwE",
               kcardcolor),
           card(
               "lib/images/travel/indigo.png",

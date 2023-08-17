@@ -40,7 +40,8 @@ dependencies:
   connectivity: ^3.0.6
   lottie: ^2.5.0
   flutter_launcher_icons: ^0.13.1
-  get: ^4.6.5
+ 
+
 
   animations: ^2.0.7
 
@@ -50,7 +51,7 @@ dev_dependencies:
     sdk: flutter
 
 flutter_icons:
-  image_path: lib/images/appicon.png
+  image_path: lib/images/logoo.png
   android: true
   ios: true
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -110,6 +111,12 @@ flutter:
   - lib/images/shopping/decathlon.png
   - lib/images/shopping/walmart.png
   - lib/images/shopping/firstcry.png
+  - lib/images/shopping/chennaimobiles.jpg
+  - lib/images/shopping/croma.jpg
+  - lib/images/shopping/jiomart.jpg
+  - lib/images/shopping/meesho.png
+  - lib/images/shopping/poorvika.jpg
+  - lib/images/shopping/relaiancedigital.png
   #social
   - lib/images/social/instagram.png
   - lib/images/social/twitterx.png
@@ -221,14 +228,46 @@ flutter:
   - lib/images/sports/onefootball.png
   - lib/images/sports/sk.jpg
   - lib/images/sports/sn.png
-
-  
-
-
-
-  
-
 #education
+ 
+  - lib/images/education/brainly.png
+  - lib/images/education/byjus.png
+  - lib/images/education/cbse.png
+  - lib/images/education/classroom.png
+  - lib/images/education/coursera.png
+  - lib/images/education/toppr.png
+  - lib/images/education/vedantu.png
+  - lib/images/education/unfoldu.png
+  - lib/images/education/upgrad.png
+  - lib/images/education/udemey.png
+  - lib/images/education/chegg.png
+  - lib/images/education/bart.png
+  - lib/images/education/unacademey.png
+  - lib/images/education/zoom.png
+
+  #finance
+  - lib/images/finance/axis.png
+  - lib/images/finance/gpay.png
+  - lib/images/finance/icici.jpg
+  - lib/images/finance/kvb.png
+  - lib/images/finance/paytm.png
+  - lib/images/finance/phonepe.png
+  - lib/images/finance/sbi.png
+  - lib/images/finance/union.png
+  - lib/images/finance/yes.png
+  #utils
+  - lib/images/utils/bard.jpg
+  - lib/images/utils/canva.png
+  - lib/images/utils/chatgpt.png
+  - lib/images/utils/digilocker.png
+  - lib/images/utils/drive.png
+  - lib/images/utils/fiverr.png
+  - lib/images/utils/freelancer.jpg
+  - lib/images/utils/git.png
+  - lib/images/utils/upwork.png
+
+  
+
 
 
 

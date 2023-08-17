@@ -11,41 +11,47 @@ class finance_screen extends StatelessWidget {
       Row(
         children: [
           card(
-            "lib/images/shopping/amazon.png",
-            "Amazon",
-            "https://amzn.to/3rkLreJ",
+            "lib/images/finance/gpay.png",
+            "Gpay",
+            "https://pay.google.com/about/",
             kcardcolor,
           ),
-          card("lib/images/shopping/flipkart.png", "Flipkart",
-              "https://www.flipkart.com/", kcardcolor),
-          card(
-              "lib/images/shopping/myntra.png",
-              "Myntra",
-              "https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ykCHHe6HZQvCsNmH2HnNvDSc5hTjZHHqDmRUchpoxm87uaJ_BPWcUUaAtXbEALw_wcB",
+          card("lib/images/finance/phonepe.png", "Phonepe",
+              "https://www.phonepe.com/", kcardcolor),
+          card("lib/images/finance/paytm.png", "Paytm", "https://paytm.com/",
               kcardcolor),
         ],
       ),
       Row(
         children: [
-          card("lib/images/shopping/ajio.png", "Ajio", "https://www.ajio.com/",
+          card(
+              "lib/images/finance/icici.jpg",
+              "ICICI",
+              "https://www.icicibank.com/personal-banking/insta-banking/internet-banking",
               kcardcolor),
-          card("lib/images/shopping/snapdeal.png", "Snapdeal",
-              "https://m.snapdeal.com/", kwhitecolor),
-          card("lib/images/shopping/bigbasket.png", "bigbasket",
-              "https://www.bigbasket.com/", kwhitecolor),
+          card("lib/images/finance/sbi.png", "SBI",
+              "https://retail.onlinesbi.sbi/retail/login.htm", kcardcolor),
+          card(
+              "lib/images/finance/axis.png",
+              "Axis",
+              "https://www.axisbank.com/bank-smart/internet-banking/getting-started",
+              kcardcolor),
         ],
       ),
       Row(
         children: [
+          card("lib/images/finance/kvb.png", "KVB",
+              "https://www.kvb.co.in/ilogin/", kcardcolor),
           card(
-              "lib/images/shopping/tatacliq.png",
-              "Tatacliq",
-              "https://www.tatacliq.com/?cid=ps:tata_cliq_brand_south:google:tata_cliq_Generic_exact:brand&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ynX_gN5lcPCEbULc7cWbX9KQC86Dn-jcD-NKpAXQq0TrklVtFbElbEaAp2jEALw_wcB&gclsrc=aw.ds",
-              kwhitecolor),
-          card("lib/images/shopping/paytmmall.png", "Paytm Mall",
-              "https://paytmmall.com/", kcardcolor),
-          card("lib/images/shopping/apple.png", "Apple",
-              "https://www.apple.com/in/store", kcardcolor),
+              "lib/images/finance/yes.png",
+              "YES",
+              "https://www.yesbank.in/digital-banking/online-banking/netbanking-services",
+              kcardcolor),
+          card(
+              "lib/images/finance/union.png",
+              "Union",
+              "https://www.unionbankonline.co.in/corp/AuthenticationController?__START_TRAN_FLAG__=Y&FORMSGROUP_ID__=AuthenticationFG&__EVENT_ID__=LOAD&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=026&LANGUAGE_ID=001",
+              kcardcolor),
         ],
       )
     ]);

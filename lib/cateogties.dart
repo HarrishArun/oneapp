@@ -9,12 +9,12 @@ import 'package:OneApp/appscreens/fooddelivery.dart';
 import 'package:OneApp/appscreens/health.dart';
 import 'package:OneApp/appscreens/music.dart';
 import 'package:OneApp/appscreens/news.dart';
-import 'package:OneApp/appscreens/productivity.dart';
+import 'package:OneApp/appscreens/utilities.dart';
 import 'package:OneApp/appscreens/socialmedia.dart';
 import 'package:OneApp/appscreens/sports.dart';
 import 'package:OneApp/appscreens/travel.dart';
 import 'package:OneApp/constants.dart';
-import 'package:flutter/services.dart';
+
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'catcard.dart';
 import 'nointernet_screen.dart';
@@ -88,7 +88,7 @@ class _cateogries_screenState extends State<cateogries_screen> {
             Row(
               children: [
                 cateogries_card("lib/images/cateogries/shopping.png",
-                    "E-Commerce", apps_screen(ecommerce_screen())),
+                    "Shopping", apps_screen(ecommerce_screen())),
                 cateogries_card("lib/images/cateogries/socialmedia.png",
                     "Social Media", apps_screen(sociamedia_screen())),
               ],
@@ -96,7 +96,7 @@ class _cateogries_screenState extends State<cateogries_screen> {
             Row(
               children: [
                 cateogries_card("lib/images/cateogries/food.png",
-                    "FoodDelivery", apps_screen(fooddelivery_screen())),
+                    "Food & Groceries", apps_screen(fooddelivery_screen())),
                 cateogries_card("lib/images/cateogries/news.png", "News",
                     apps_screen(news_screen())),
               ],
@@ -111,7 +111,7 @@ class _cateogries_screenState extends State<cateogries_screen> {
             ),
             Row(
               children: [
-                cateogries_card("lib/images/cateogries/health.png", "health",
+                cateogries_card("lib/images/cateogries/health.png", "Health",
                     apps_screen(health_screen())),
                 cateogries_card("lib/images/cateogries/sports.png", "Sports",
                     apps_screen(sports_screen())),
@@ -128,9 +128,9 @@ class _cateogries_screenState extends State<cateogries_screen> {
             Row(
               children: [
                 cateogries_card("lib/images/cateogries/utilities.png",
-                    "Productivity", apps_screen(productivity_screen())),
-                cateogries_card("lib/images/cateogries/finance.png", "Finance",
-                    apps_screen(finance_screen())),
+                    "Utilities", apps_screen(utilities_screen())),
+                cateogries_card("lib/images/cateogries/finance.png",
+                    "Finance & Banking", apps_screen(finance_screen())),
               ],
             )
           ],
