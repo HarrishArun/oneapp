@@ -11,41 +11,35 @@ class music_screen extends StatelessWidget {
       Row(
         children: [
           card(
-            "lib/images/shopping/amazon.png",
-            "Amazon",
-            "https://amzn.to/3rkLreJ",
+            "lib/images/music/spotify.png",
+            "Spotify",
+            "https://open.spotify.com/",
             kcardcolor,
           ),
-          card("lib/images/shopping/flipkart.png", "Flipkart",
-              "https://www.flipkart.com/", kcardcolor),
-          card(
-              "lib/images/shopping/myntra.png",
-              "Myntra",
-              "https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ykCHHe6HZQvCsNmH2HnNvDSc5hTjZHHqDmRUchpoxm87uaJ_BPWcUUaAtXbEALw_wcB",
+          card("lib/images/music/amazonmusic.png", "AmazonMusic",
+              "https://music.amazon.in/", kcardcolor),
+          card("lib/images/music/wynk.png", "Wynk", "https://wynk.in/music",
               kcardcolor),
         ],
       ),
       Row(
         children: [
-          card("lib/images/shopping/ajio.png", "Ajio", "https://www.ajio.com/",
+          card("lib/images/music/ganna.png", "Gaana", "https://gaana.com/",
               kcardcolor),
-          card("lib/images/shopping/snapdeal.png", "Snapdeal",
-              "https://m.snapdeal.com/", kwhitecolor),
-          card("lib/images/shopping/bigbasket.png", "bigbasket",
-              "https://www.bigbasket.com/", kwhitecolor),
+          card("lib/images/music/jiosaavan.png", "Jiosavaavn",
+              "https://www.jiosaavn.com/", kwhitecolor),
+          card("lib/images/music/ytmusic.png", "YT Music",
+              "https://music.youtube.com/", kcardcolor),
         ],
       ),
       Row(
         children: [
-          card(
-              "lib/images/shopping/tatacliq.png",
-              "Tatacliq",
-              "https://www.tatacliq.com/?cid=ps:tata_cliq_brand_south:google:tata_cliq_Generic_exact:brand&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ynX_gN5lcPCEbULc7cWbX9KQC86Dn-jcD-NKpAXQq0TrklVtFbElbEaAp2jEALw_wcB&gclsrc=aw.ds",
-              kwhitecolor),
-          card("lib/images/shopping/paytmmall.png", "Paytm Mall",
-              "https://paytmmall.com/", kcardcolor),
-          card("lib/images/shopping/apple.png", "Apple",
-              "https://www.apple.com/in/store", kcardcolor),
+          card("lib/images/music/resso.jpg", "Resso",
+              "https://www.resso.com/in/", kcardcolor),
+          card("lib/images/music/tamilradios.png", "TamilRadios",
+              "https://www.tamilradios.com/", kcardcolor),
+          card("lib/images/shopping/apple.png", "AppleMusic",
+              "https://music.apple.com/us/browse", kcardcolor),
         ],
       )
     ]);

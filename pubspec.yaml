@@ -191,6 +191,40 @@ flutter:
   - lib/images/entertainment/sony.png
   - lib/images/entertainment/sunnxt.png
   - lib/images/entertainment/zee.png
+  #health
+
+  - lib/images/health/1mg.png
+  - lib/images/health/apollo.png
+  - lib/images/health/medibuddy.jpg
+  - lib/images/health/netmeds.png
+  - lib/images/health/pharmeasy.png
+  - lib/images/health/medplus.png
+  - lib/images/health/practo.png
+  - lib/images/health/mm.png
+  - lib/images/health/truemeds.png
+  #music
+  - lib/images/music/amazonmusic.png
+  - lib/images/music/ganna.png
+  - lib/images/music/jiosaavan.png
+  - lib/images/music/resso.jpg
+  - lib/images/music/spotify.png
+  - lib/images/music/tamilradios.png
+  - lib/images/music/wynk.png
+  - lib/images/music/ytmusic.png
+  #sports
+  - lib/images/sports/cb.png
+  - lib/images/sports/espn.png
+  - lib/images/sports/f1.png
+  - lib/images/sports/fifa.png
+  - lib/images/sports/fox.png
+  - lib/images/sports/ipl.png
+  - lib/images/sports/onefootball.png
+  - lib/images/sports/sk.jpg
+  - lib/images/sports/sn.png
+
+  
+
+
 
   
 

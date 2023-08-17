@@ -11,43 +11,53 @@ class health_screen extends StatelessWidget {
       Row(
         children: [
           card(
-            "lib/images/shopping/amazon.png",
-            "Amazon",
-            "https://amzn.to/3rkLreJ",
+            "lib/images/health/pharmeasy.png",
+            "PharmEasy",
+            "https://pharmeasy.in/",
             kcardcolor,
           ),
-          card("lib/images/shopping/flipkart.png", "Flipkart",
-              "https://www.flipkart.com/", kcardcolor),
           card(
-              "lib/images/shopping/myntra.png",
-              "Myntra",
-              "https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ykCHHe6HZQvCsNmH2HnNvDSc5hTjZHHqDmRUchpoxm87uaJ_BPWcUUaAtXbEALw_wcB",
-              kcardcolor),
-        ],
-      ),
-      Row(
-        children: [
-          card("lib/images/shopping/ajio.png", "Ajio", "https://www.ajio.com/",
-              kcardcolor),
-          card("lib/images/shopping/snapdeal.png", "Snapdeal",
-              "https://m.snapdeal.com/", kwhitecolor),
-          card("lib/images/shopping/bigbasket.png", "bigbasket",
-              "https://www.bigbasket.com/", kwhitecolor),
-        ],
-      ),
-      Row(
-        children: [
-          card(
-              "lib/images/shopping/tatacliq.png",
-              "Tatacliq",
-              "https://www.tatacliq.com/?cid=ps:tata_cliq_brand_south:google:tata_cliq_Generic_exact:brand&gclid=Cj0KCQiA-qGNBhD3ARIsAO_o7ynX_gN5lcPCEbULc7cWbX9KQC86Dn-jcD-NKpAXQq0TrklVtFbElbEaAp2jEALw_wcB&gclsrc=aw.ds",
+              "lib/images/health/1mg.png",
+              "1mg",
+              "https://www.1mg.com/offers?utm_source=google&utm_medium=cpc&utm_campaign={1MG_Search_Brand_Pharma_TROAS}&utm_adgroup={adgroup}&utm_keyword=1mg&wpsrc=Google%20AdWords&wpcid=624753808&wpsnetn=g&wpkwn=1mg&wpkmatch=b&wpcrid=648997263074&wpscid=31117992618&wpkwid=kwd-145247769&gclid=CjwKCAjwxOymBhAFEiwAnodBLBsSjyjT0ixyhxUXmROB11qwOEZz2lbZqhFIAdkd4u5JWFb-N9us7hoC-bAQAvD_BwE",
               kwhitecolor),
-          card("lib/images/shopping/paytmmall.png", "Paytm Mall",
-              "https://paytmmall.com/", kcardcolor),
-          card("lib/images/shopping/apple.png", "Apple",
-              "https://www.apple.com/in/store", kcardcolor),
+          card(
+              "lib/images/health/netmeds.png",
+              "Netmeds",
+              "https://m.netmeds.com/healthstore?source_attribution=ADW-CPC-Comp-medlife%20offers&utm_source=ADW-CPC-Comp-medlife%20offers&utm_medium=CPC&utm_campaign=ADW-CPC-Comp&gclid=CjwKCAjwxOymBhAFEiwAnodBLDzJKh-DGF4waUBzv7t_63s0GDxjRjY0tHgAellMvxLTIwGdauY-nxoCY9oQAvD_BwE",
+              kcardcolor),
         ],
-      )
+      ),
+      Row(
+        children: [
+          card(
+              "lib/images/health/apollo.png",
+              "Apollo",
+              "https://www.apollopharmacy.in/?utm_source=google&utm_medium=srnb&campaignid=20341000935&adgroupid=156642113208&keyword=medplus%20online&device=m&adtype=&product_id=&utm_campaign=Apollo_Non-Brand_Pharmacy_RestCities_New_160123&utm_content=Pharmacy_Online_EM&gclid=CjwKCAjwxOymBhAFEiwAnodBLB18E20BCYMJIiym2vrxXlPDyryDSf5epykB3hEXd_1CuXNw-BqeLxoCefwQAvD_BwE",
+              kcardcolor),
+          card("lib/images/health/medplus.png", "Medplus",
+              "https://www.medplusmart.com/pharmacy", kwhitecolor),
+          card("lib/images/health/medibuddy.jpg", "Medibuddy",
+              "https://www.medibuddy.in/", kcardcolor),
+        ],
+      ),
+      Row(
+        children: [
+          card(
+            "lib/images/health/truemeds.png",
+            "Truemeds",
+            "https://www.truemeds.in/?utm_source=google&utm_medium=Search&utm_campaign=Sok_Search_Brand&adgroupid=128411669733&utm_term=truemeds&utm_adid={adid}&gclid=CjwKCAjwxOymBhAFEiwAnodBLGdZGhQwIzdFh9u2CL-tne6ayyS1NnUkXS5KPq0FiZD2K56o8dr0dBoCcLwQAvD_BwE",
+            kcardcolor,
+          ),
+          card(
+              "lib/images/health/mm.png",
+              "Manmatters",
+              "https://manmatters.com/?utm_source=google&utm_medium=brand&utm_campaign=Search_Brand_MM&gclid=CjwKCAjwxOymBhAFEiwAnodBLJg-2euLcS3SIRL2RmNa3t0L4mAVCwFowgnKZJJeZ3evuftdDr6a0hoC2BcQAvD_BwE",
+              kcardcolor),
+          card("lib/images/health/practo.png", "Practo",
+              "https://www.practo.com/", kcardcolor),
+        ],
+      ),
     ]);
   }
 }
